@@ -4,12 +4,17 @@
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
+// import HelloWorld from "./components/HelloWorld.vue";
+import { defineAsyncComponent } from "vue";
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    HelloWorld: defineAsyncComponent(() =>
+      import("./components/HelloWorld.vue")
+    ),
+  },
+  setup() {
+    console.log(111);
   },
 };
 </script>

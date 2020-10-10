@@ -26,6 +26,11 @@ module.exports = {
       rule.use("less-loader").loader("less-loader").end();
     });
     // config.resolve.alias.set("@", resolve("src"));
+    // 标题
+    config.plugin("html").tap((args) => {
+      args[0].title = "vue 3.0 ⬆️";
+      return args;
+    });
   },
   // webpack 配置
   configureWebpack: (config) => {

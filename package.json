@@ -9,6 +9,7 @@
     "lint:diff": "node ./scripts/pre-commit-diff.js"
   },
   "dependencies": {
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
     "core-js": "^3.6.5",
     "vue": "^3.0.0"
   },
@@ -37,10 +38,12 @@
     "vue-template-compiler": "^2.6.11",
     "webpack-bundle-analyzer": "^3.9.0"
   },
-  
   "browserslist": [
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "gitHooks": {
+    "pre-commit": "npm run lint:diff"
+  }
 }
