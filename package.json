@@ -6,7 +6,7 @@
     "start": "node ./build/cli.js start",
     "build": "node ./build/cli.js build",
     "lint": "node ./build/cli.js lint",
-    "prelint": "node ./scripts/pre-commit-diff.js"
+    "lint:diff": "node ./scripts/pre-commit-diff.js"
   },
   "dependencies": {
     "@babel/plugin-syntax-dynamic-import": "^7.8.3",
@@ -45,6 +45,12 @@
     "not dead"
   ],
   "gitHooks": {
-    "pre-commit": "npm run prelint"
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,vue}": [
+      "npm run lint:diff",
+      "git add"
+    ]
   }
 }
