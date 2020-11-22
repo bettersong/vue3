@@ -40,6 +40,7 @@ module.exports = {
     };
   },
   /* webpack-dev-server 相关配置 */
+  // console.log()
   devServer: {
     /* 自动打开浏览器 */
     open: true,
