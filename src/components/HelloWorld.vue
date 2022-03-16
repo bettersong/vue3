@@ -10,7 +10,13 @@ const count = ref(0);
 
 <template>
   <h1>{{ msg }}</h1>
-
+  <p>
+    github:
+    <a href="https://github.com/bettersong/songyao-cli">songyao-cli</a
+    >欢迎star🌟，
+    <a href="https://github.com/bettersong/interview">南玖的前端学习乐园</a
+    >欢迎star🌟，感谢支持🙏
+  </p>
   <p>
     Recommended IDE setup:
     <a href="https://code.visualstudio.com/" target="_blank">VSCode</a>

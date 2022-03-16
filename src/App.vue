@@ -5,8 +5,13 @@ import HelloWorld from './components/HelloWorld.vue';
 </script>
 
 <template>
-  <img alt="Vue logo" title="vite vue log" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + Vite" />
+  <img
+    class="nanjiu_logo"
+    alt="nanjiu logo"
+    title="vite vue log"
+    src="./assets/nanjiu.jpg"
+  />
+  <HelloWorld msg="Hello Vue 3 + Vite with songyao-cli" />
 </template>
 
 <style>
@@ -17,5 +22,10 @@ import HelloWorld from './components/HelloWorld.vue';
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.nanjiu_logo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
 }
 </style>
